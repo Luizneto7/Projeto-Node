@@ -6,10 +6,10 @@ export class Database {
   database = {};
 
   constructor() {
-    this.persist();
+    this.createDbFile();
   }
 
-  persist() {
+  createDbFile() {
     fs.writeFile(DATABASE_PATH, JSON.stringify(this.database));
   }
 

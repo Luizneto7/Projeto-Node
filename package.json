@@ -4,7 +4,7 @@
   "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "node --watch src/server.js"
   },
   "author": "Luiz Neto",
   "license": "ISC",

@@ -26,7 +26,7 @@ export const routes = [
   {
     method: "DELETE",
     path: "/products/:id",
-    controller: ({ request, response, database }) => {
+    controller: (request, response) => {
       return response.end("Produto Removido com ID: " + request.params.id);
     },
   },
